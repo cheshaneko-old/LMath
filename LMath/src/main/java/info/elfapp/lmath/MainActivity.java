@@ -17,7 +17,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         TextView editText = (TextView) findViewById(R.id.editMsg);
-        editText.setMovementMethod(new ScrollingMovementMethod());
+        //editText.setMovementMethod(new ScrollingMovementMethod());
         if(savedInstanceState!=null){
             dataBuf = (String) savedInstanceState.getSerializable("dataBuf");
         }

@@ -26,14 +26,14 @@
 
             <Button
                 android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
+                android:layout_height="wrap_content"
                 android:text="0"
                 android:id="@+id/button3"
                 android:onClick="setNil" />
 
             <Button
                 android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
+                android:layout_height="wrap_content"
                 android:text="1"
                 android:id="@+id/button4"
                 android:onClick="setOne" />
@@ -57,12 +57,20 @@
                 android:id="@+id/button2"
                 android:onClick="clearData" />
         </LinearLayout>
-
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:scrollbars = "vertical"
             android:id="@id/editMsg"
             android:layout_marginTop="26dp" />
+        </HorizontalScrollView>
+        </ScrollView>
     </LinearLayout>
 
 </RelativeLayout>
